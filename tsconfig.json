@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "ES5",
+    "experimentalDecorators": true,
+    "strict": true,
+    "importHelpers": true,
+    "allowSyntheticDefaultImports": true,
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "outDir": "types"
+  },
+  "exclude": [
+    "node_modules",
+    "test"
+  ]
+}
