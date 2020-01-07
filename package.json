@@ -1,5 +1,5 @@
 {
-    "name": "hooxjs",
+    "name": "pageslideup",
     "version": "0.1.0",
     "description": "slide on mobile",
     "author": "wuomzfx <75851654@qq.com>",
@@ -38,6 +38,9 @@
         "rollup-plugin-babel": "^4.3.2",
         "rollup-plugin-node-resolve": "^5.2.0",
         "ts-jest": "^24.0.2",
-        "typescript": "^3.5.3"
+        "typescript": "^3.7.4"
+      },
+      "directories": {
+        "test": "test"
       }
 }
