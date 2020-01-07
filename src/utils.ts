@@ -1,6 +1,6 @@
 export function isDom(el:string|HTMLElement|null):boolean{
 
-    const reg:RegExp=/\(.|#)\s(+)/ 
+    const reg:RegExp=/^[.#]{1}[0-9a-zA-Z_]+$/
    
     if(typeof el==='string'){
         if(!reg.test(el)) return false
