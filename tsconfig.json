@@ -1,16 +1,19 @@
 {
   "compilerOptions": {
-    "target": "ES5",
+    "target": "es5",
     "experimentalDecorators": true,
     "strict": true,
     "importHelpers": true,
     "allowSyntheticDefaultImports": true,
+    "allowJs":true,
+    "module": "es6",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
     "declaration": true,
-    "emitDeclarationOnly": true,
-    "outDir": "types"
+    "emitDeclarationOnly": true
   },
-  "exclude": [
-    "node_modules",
-    "test"
+  "include":[
+    "src"
   ]
 }

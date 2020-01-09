@@ -9,6 +9,7 @@
    horizon,
  }
 
+
  interface Option<T>{
     index?:number  //初始化传入的页数
     slideUpCallback?:(num:number)=>void //表明当前滑动的页数  
@@ -19,7 +20,7 @@
 
  class Slide<T>{
 
-    private el:HTMLElement;
+    private el:HTMLElement=document.body;
     private elLength:number=0; //dom children的page长度
     private index:number=0;
     private slideUpCallback:any;
@@ -176,4 +177,6 @@
 
  } 
 
+
+ module.exports=Slide
 

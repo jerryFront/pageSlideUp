@@ -1,5 +1,6 @@
 import babel from 'rollup-plugin-babel';
 import resolve from 'rollup-plugin-node-resolve';
+import typescript from 'rollup-plugin-typescript2';
 
 export default {
   input: './src/index.ts',
@@ -17,11 +18,16 @@ export default {
     resolve({
       extensions: ['.tsx', '.ts'],
     }),
-    babel({
-      runtimeHelpers: true,
+    typescript({
       include: ['src/**/*.*'],
-      plugins: ['@babel/plugin-transform-runtime'],
-      extensions: ['.tsx', '.ts'],
+      typescript: require('typescript'),
     }),
+    babel(
+      { 
+        include: ['src/**/*.*'],
+        runtimeHelpers: true,
+        plugins: ['@babel/plugin-transform-runtime'],
+        extensions: ['.tsx', '.ts'],
+      }),
   ],
 };
