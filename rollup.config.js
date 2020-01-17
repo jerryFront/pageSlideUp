@@ -1,6 +1,7 @@
 import babel from 'rollup-plugin-babel';
 import resolve from 'rollup-plugin-node-resolve';
 import typescript from 'rollup-plugin-typescript2';
+import typescriptCompiler from "typescript"
 
 export default {
   input: './src/index.ts',
@@ -18,10 +19,7 @@ export default {
     resolve({
       extensions: ['.tsx', '.ts'],
     }),
-    typescript({
-      include: ['src/**/*.*'],
-      typescript: require('typescript'),
-    }),
+    typescript({ typescript: typescriptCompiler }),
     babel(
       { 
         include: ['src/**/*.*'],
